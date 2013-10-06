@@ -1,13 +1,14 @@
-# Bootstrap
-app/bootstrap*
-
-# Symfony directories
-vendor/*
-*/logs/*
-*/cache/*
-web/uploads/*
-web/bundles/*
-
-# Configuration files
-app/config/parameters.ini
-app/config/parameters.yml
+app/cache
+tests/log
+web/images/*
+vendor
+composer.phar
+.idea
+.nbproject
+.svn
+.DS_Store
+nohup.out
+admin-console/vendor
+admin-console/app/cache
+logs/*
+!.gitignore
