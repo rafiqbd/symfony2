@@ -1,0 +1,6 @@
+hwi_oauth_redirect:
+    resource: "@HWIOAuthBundle/Resources/config/routing/redirect.xml"
+    prefix:   /demo/secured/connect
+
+facebook_login:
+    pattern: /demo/secured/login_facebook
