@@ -1,6 +1,26 @@
+#hwi_oauth_redirect:
+#    resource: "@HWIOAuthBundle/Resources/config/routing/redirect.xml"
+#    prefix:   /demo/secured/connect
+#
+#facebook_login:
+#    pattern: /demo/secured/login_facebook
+
+hwi_oauth_login:
+    resource: "@HWIOAuthBundle/Resources/config/routing/login.xml"
+    prefix:   /login
 hwi_oauth_redirect:
     resource: "@HWIOAuthBundle/Resources/config/routing/redirect.xml"
-    prefix:   /demo/secured/connect
-
+    prefix:   /connect
 facebook_login:
-    pattern: /demo/secured/login_facebook
+    pattern: /login/login_facebook
+#login:
+#    pattern:   /login
+#    defaults:  { _controller: FoggylineTickerBundle:Security:login }
+#login_check:
+#    pattern:   /login_check
+#
+logout:
+    path:   /logout
+foggyline_ticker:
+    resource: "@AcmeDemoBundle/Resources/config/routing.yml"
+    prefix:   /

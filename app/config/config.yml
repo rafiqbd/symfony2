@@ -86,5 +86,5 @@ services: #here's where the magic happens
   hwi_oauth.user.provider.entity:
     class: HWI\Bundle\OAuthBundle\Security\Core\User\OAuthUserProvider
   ib_user.oauth_user_provider:
-    class: Acme\DemoBundle\Provider\Provider
-    arguments: [@session, @doctrine, %admins%]
+    class: Acme\DemoBundle\Auth\OAuthProvider
+    arguments: [@session, @doctrine, %admins%, @service_container]
